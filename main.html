@@ -10,13 +10,11 @@
 
 </head>
 <body>
-    <!-- Navbar -->
-
-
-<nav class="bg-white border-gray-200">
+  <!-- Navbar -->
+  <nav class="bg-white border-gray-200 md:p-2">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img class="h-9 w-9" src="./assets/logo.png" alt="FLAME Volleyball club">
+          <img class="h-9 w-9 md:h-12 md:w-12" src="./assets/logo.png" alt="FLAME Volleyball club">
       </a>
       <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-multi-level" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -27,8 +25,13 @@
       <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
         <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
           <li>
-            <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Home</a>
+            <a href="#" class="block py-2 px-3 text-black rounded md:bg-transparent md:hover:text-blue-700 md:p-0" aria-current="page">Home</a>
           </li>
+          <!-- About -->
+          <li>
+            <a href="#" class="block py-2 px-3 text-black rounded md:bg-transparent md:hover:text-blue-700 md:p-0" aria-current="page">About</a>
+          </li>
+          <!-- About -->
           <!-- Team year by year -->
           <li>
               <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Our Team<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -56,12 +59,12 @@
                       </div>
                     </li>
                     <li aria-labelledby="dropdownNavbarLink">
-                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between text-black w-full px-4 py-2 hover:bg-gray-100">2023-2024<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <button id="doubleDropdownButton-1" data-dropdown-toggle="doubleDropdown-1" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between text-black w-full px-4 py-2 hover:bg-gray-100">2023-2024<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                         </svg>
                       </button>
-                      <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                          <ul class="py-2 text-sm text-gray-700" aria-labelledby="doubleDropdownButton">
+                      <div id="doubleDropdown-1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                          <ul class="py-2 text-sm text-gray-700" aria-labelledby="doubleDropdownButton-1">
                             <li>
                               <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Men's Team</a>
                             </li>
@@ -72,12 +75,12 @@
                       </div>
                     </li>
                     <li aria-labelledby="dropdownNavbarLink">
-                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between text-black w-full px-4 py-2 hover:bg-gray-100">2022-2023<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <button id="doubleDropdownButton-2" data-dropdown-toggle="doubleDropdown-2" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between text-black w-full px-4 py-2 hover:bg-gray-100">2022-2023<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                         </svg>
                       </button>
-                      <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                          <ul class="py-2 text-sm text-gray-700" aria-labelledby="doubleDropdownButton">
+                      <div id="doubleDropdown-2" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                          <ul class="py-2 text-sm text-gray-700" aria-labelledby="doubleDropdownButton-2">
                             <li>
                               <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Men's Team</a>
                             </li>
@@ -92,34 +95,67 @@
               </div>
           </li>
           <!-- Club year by year -->
-
-        <button id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto" type="button">Our Club<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-            </svg>
+          <li>
+            <button id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto" type="button">Our Club<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+              </svg>
             </button>
-            
+
             <!-- Dropdown menu -->
             <div id="dropdownDivider" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDividerButton">
+              <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDividerButton">
                 <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">2024-2025</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">2024-2025</a>
                 </li>
                 <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">2023-2024</a>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">2023-2024</a>
                 </li>
                 <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">2022-2023</a>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">2022-2023</a>
                 </li>
-                </ul>
+              </ul>
             </div>
-    
+          </li>
           <!-- Club year by year -->
+          <!-- Archive by year -->
+          <li>
+            <button id="dropdownDividerButton-1" data-dropdown-toggle="dropdownDivider-1" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto" type="button">Archive<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+              </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div id="dropdownDivider-1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+              <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDividerButton-1">
+                <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">2024-2025</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">2023-2024</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">2022-2023</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Archive year by year -->
         </ul>
       </div>
     </div>
   </nav>
-  
-    <!-- Navbar -->
+  <!-- Navbar -->
+   <!-- Hero Section -->
+    <section class="hero-container relative">
+      <video class="w-full h-full" autoplay muted controls>
+        <source src="/docs/videos/flowbite.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-txt align-center absolute top-40 flex">
+        <h1 class="text-7xl text-center">FLAME Volleyball Club</h1>
+      </div>
+    </section>
+   <!-- Hero Section -->
     
 </body>
 <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
