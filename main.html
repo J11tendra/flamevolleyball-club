@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FLAME Volleyball Club</title>
+    <title>FLAME Volleyball Club | Home</title>
     <link rel="icon" href="./assets/logo.png" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -17,7 +17,7 @@
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="main.html" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img
             class="h-9 w-9 md:h-12 md:w-12"
             src="./assets/logo.png"
@@ -48,13 +48,16 @@
             />
           </svg>
         </button>
-        <div class="hidden z-50 w-full md:block md:w-auto" id="navbar-multi-level">
+        <div
+          class="hidden z-50 w-full md:block md:w-auto"
+          id="navbar-multi-level"
+        >
           <ul
             class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
           >
             <li>
               <a
-                href="#"
+                href="main.html"
                 class="block py-2 px-3 text-black rounded md:bg-transparent md:hover:text-blue-700 md:p-0"
                 aria-current="page"
                 >Home</a
@@ -73,12 +76,13 @@
             <!-- Team year by year -->
             <li>
               <button
-                id="dropdownNavbarLink"
-                data-dropdown-toggle="dropdownNavbar"
+                id="dropdownDividerButton-0"
+                data-dropdown-toggle="dropdownDivider-0"
                 class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+                type="button"
               >
                 Our Team<svg
-                  class="w-2.5 h-2.5 ms-2.5"
+                  class="w-2.5 h-2.5 ms-3"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -93,152 +97,31 @@
                   />
                 </svg>
               </button>
+
               <!-- Dropdown menu -->
               <div
-                id="dropdownNavbar"
-                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                id="dropdownDivider-0"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
               >
                 <ul
                   class="py-2 text-sm text-gray-700"
-                  aria-labelledby="dropdownLargeButton"
+                  aria-labelledby="dropdownDividerButton-0"
                 >
-                  <!-- Years list -->
-                  <li aria-labelledby="dropdownNavbarLink">
-                    <button
-                      id="doubleDropdownButton"
-                      data-dropdown-toggle="doubleDropdown"
-                      data-dropdown-placement="right-start"
-                      type="button"
-                      class="flex items-center justify-between text-black w-full px-4 py-2 hover:bg-gray-100"
+                  <li>
+                    <a href="./team.html?year=2024-25" class="block px-4 py-2 hover:bg-gray-100"
+                      >2024-2025</a
                     >
-                      2024-2025<svg
-                        class="w-2.5 h-2.5 ms-2.5"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 10 6"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="m1 1 4 4 4-4"
-                        />
-                      </svg>
-                    </button>
-                    <div
-                      id="doubleDropdown"
-                      class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
-                    >
-                      <ul
-                        class="py-2 text-sm text-gray-700"
-                        aria-labelledby="doubleDropdownButton"
-                      >
-                        <li>
-                          <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                            >Men's Team</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                            >Women's Team</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
                   </li>
-                  <li aria-labelledby="dropdownNavbarLink">
-                    <button
-                      id="doubleDropdownButton-1"
-                      data-dropdown-toggle="doubleDropdown-1"
-                      data-dropdown-placement="right-start"
-                      type="button"
-                      class="flex items-center justify-between text-black w-full px-4 py-2 hover:bg-gray-100"
+                  <li>
+                    <a href="./team.html?year=2023-24" class="block px-4 py-2 hover:bg-gray-100"
+                      >2023-2024</a
                     >
-                      2023-2024<svg
-                        class="w-2.5 h-2.5 ms-2.5"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 10 6"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="m1 1 4 4 4-4"
-                        />
-                      </svg>
-                    </button>
-                    <div
-                      id="doubleDropdown-1"
-                      class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
-                    >
-                      <ul
-                        class="py-2 text-sm text-gray-700"
-                        aria-labelledby="doubleDropdownButton-1"
-                      >
-                        <li>
-                          <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                            >Men's Team</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                            >Women's Team</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
                   </li>
-                  <li aria-labelledby="dropdownNavbarLink">
-                    <button
-                      id="doubleDropdownButton-2"
-                      data-dropdown-toggle="doubleDropdown-2"
-                      data-dropdown-placement="right-start"
-                      type="button"
-                      class="flex items-center justify-between text-black w-full px-4 py-2 hover:bg-gray-100"
+                  <li>
+                    <a href="./team.html?year=2022-23" class="block px-4 py-2 hover:bg-gray-100"
+                      >2022-2023</a
                     >
-                      2022-2023<svg
-                        class="w-2.5 h-2.5 ms-2.5"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 10 6"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="m1 1 4 4 4-4"
-                        />
-                      </svg>
-                    </button>
-                    <div
-                      id="doubleDropdown-2"
-                      class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
-                    >
-                      <ul
-                        class="py-2 text-sm text-gray-700"
-                        aria-labelledby="doubleDropdownButton-2"
-                      >
-                        <li>
-                          <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                            >Men's Team</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                            >Women's Team</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
                   </li>
-                  <!-- Years list -->
                 </ul>
               </div>
             </li>
@@ -380,144 +263,110 @@
     <!-- Hero Section -->
 
     <!-- Social Section -->
-     <section class="social-section">
-      <div id="default-carousel" class="relative w-full" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-          <!-- Item 1 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+    <section class="py-20">
+      <div class="relative grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid gap-4">
+          <div>
             <img
-              src="/assets/logo.png"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain"
-              alt="..."
+              class="h-auto max-w-full rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              src="/assets/pic.jpg"
+              alt=""
             />
           </div>
-          <!-- Item 2 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div>
             <img
-              src="/docs/images/carousel/carousel-2.svg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
+              class="h-auto max-w-full rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              src="/assets/pic-1.jpg"
+              alt=""
             />
           </div>
-          <!-- Item 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div>
             <img
-              src="/docs/images/carousel/carousel-3.svg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-          <!-- Item 4 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="/docs/images/carousel/carousel-4.svg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-          <!-- Item 5 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="/docs/images/carousel/carousel-5.svg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
+              class="h-auto max-w-full rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              src="/assets/pic-2.jpg"
+              alt=""
             />
           </div>
         </div>
-        <!-- Slider indicators -->
-        <!-- <div
-          class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
-        >
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full"
-            aria-current="true"
-            aria-label="Slide 1"
-            data-carousel-slide-to="0"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 2"
-            data-carousel-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 3"
-            data-carousel-slide-to="2"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 4"
-            data-carousel-slide-to="3"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 5"
-            data-carousel-slide-to="4"
-          ></button>
-        </div> -->
-        <!-- Slider controls -->
-        <!-- <button
-          type="button"
-          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev
-        >
-          <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-          >
-            <svg
-              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M5 1 1 5l4 4"
-              />
-            </svg>
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-        <button
-          type="button"
-          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next
-        >
-          <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-          >
-            <svg
-              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m1 9 4-4-4-4"
-              />
-            </svg>
-            <span class="sr-only">Next</span>
-          </span>
-        </button> -->
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              src="/assets/pic-3.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              src="/assets/pic-4.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              src="/assets/pic-5.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              src="/assets/pic-6.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              src="/assets/pic-7.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              src="/assets/pic-8.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              src="/assets/pic-9.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              src="/assets/pic-10.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              src="/assets/pic-11.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- Cloud Effect: Top -->
+        <div
+          class="absolute -top-28 left-1/2 transform -translate-x-1/2 w-[300%] h-64 bg-gradient-to-b from-white to-transparent blur-[100px] opacity-95"
+        ></div>
+
+        <!-- Cloud Effect: Bottom -->
+        <div
+          class="absolute -bottom-28 left-1/2 transform -translate-x-1/2 w-[300%] h-64 bg-gradient-to-t from-white to-transparent blur-[100px] opacity-95"
+        ></div>
       </div>
     </section>
 
@@ -525,107 +374,231 @@
 
     <!-- Team Section -->
     <section class="team-section flex items-center justify-center">
-      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div
+        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+      >
         <a href="#">
-            <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+          <img
+            class="rounded-t-lg"
+            src="/assets/pic-1.jpg"
+            alt=""
+          />
         </a>
         <div class="p-5">
-            <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read more
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+          <a href="#">
+            <h5
+              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Noteworthy technology acquisitions 2021
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Here are the biggest enterprise technology acquisitions of 2021 so
+            far, in reverse chronological order.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Read more
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
     <!-- Team Section -->
 
     <!-- Footer Section -->
-     <section class="footer-section">
-          <footer class="bg-white dark:bg-gray-900">
-            <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-                <div class="md:flex md:justify-between">
-                  <div class="mb-6 md:mb-0">
-                      <a href="https://flowbite.com/" class="flex items-center">
-                          <img src="assets/logo.png" class="h-8 me-3" alt="FLAME VOLLEYBALL CLUB" />
-                          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">FLAME VOLLEYBALL CLUB</span>
-                      </a>
-                  </div>
-                  <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                      <div>
-                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow Us</h2>
-                          <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                              <li class="mb-4">
-                                  <a href="https://github.com/j11tendra" class="hover:underline">Instagram</a>
-                              </li>
-                          </ul>
-                      </div>
-                      <div>
-                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
-                          <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                              <li class="mb-4">
-                                  <a href="https://github.com/j11tendra" class="hover:underline ">Our Club</a>
-                              </li>
-                              <li>
-                                  <a href="https://github.com/j11tendra" class="hover:underline">Our Team</a>
-                              </li>
-                          </ul>
-                      </div>
-                      <div>
-                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Sitemap</h2>
-                          <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                              <li class="mb-4">
-                                  <a href="https://github.com/j11tendra" class="hover:underline">Home</a>
-                              </li>
-                              <li>
-                                  <a href="https://github.com/j11tendra" class="hover:underline">Archives</a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
+    <section class="footer-section">
+      <footer class="bg-[#09466e]">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+          <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+              <a href="main.html" class="flex items-center">
+                <img
+                  src="assets/logo.png"
+                  class="h-8 me-3"
+                  alt="FLAME VOLLEYBALL CLUB"
+                />
+                <span
+                  class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+                  >FLAME VOLLEYBALL CLUB</span
+                >
+              </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                <h2
+                  class="mb-6 text-sm font-semibold uppercase text-white"
+                >
+                  Follow Us
+                </h2>
+                <ul class="text-gray-300 font-medium">
+                  <li class="mb-4">
+                    <a
+                      href="https://github.com/j11tendra"
+                      class="hover:underline"
+                      >Instagram</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-              <div class="sm:flex sm:items-center sm:justify-between">
-                  <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="https://flowbite.com/" class="hover:underline">FLAME VOLLEYBALL CLUB™</a>. All Rights Reserved.
-                  </span>
-                  <div class="flex mt-4 sm:justify-center sm:mt-0">
-                      <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
-                                <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
-                            </svg>
-                          <span class="sr-only">Facebook page</span>
-                      </a>
-                      <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
-                                <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
-                            </svg>
-                          <span class="sr-only">Discord community</span>
-                      </a>
-                      <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
-                            <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
-                        </svg>
-                          <span class="sr-only">Twitter page</span>
-                      </a>
-                      <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
-                          </svg>
-                          <span class="sr-only">Instagram account</span>
-                      </a>
-                  </div>
+              <div>
+                <h2
+                  class="mb-6 text-sm font-semibold uppercase text-white"
+                >
+                  Resources
+                </h2>
+                <ul class="text-gray-300 font-medium">
+                  <li class="mb-4">
+                    <a
+                      href="https://github.com/j11tendra"
+                      class="hover:underline"
+                      >Our Club</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/j11tendra"
+                      class="hover:underline"
+                      >Our Team</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2
+                  class="mb-6 text-sm font-semibold uppercase text-white"
+                >
+                  Sitemap
+                </h2>
+                <ul class="text-gray-300 font-medium">
+                  <li class="mb-4">
+                    <a
+                      href="https://github.com/j11tendra"
+                      class="hover:underline"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/j11tendra"
+                      class="hover:underline"
+                      >Archives</a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
-        </footer>
-     </section>
+          </div>
+          <hr
+            class="my-6 border-gray-200 sm:mx-auto lg:my-8"
+          />
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <span
+              class="text-sm text-gray-300 sm:text-center"
+              >© 2025
+              <a href="https://github.com/j11tendra" class="hover:underline"
+                >FLAME VOLLEYBALL CLUB™</a
+              >. All Rights Reserved.
+            </span>
+            <div class="flex mt-4 sm:justify-center sm:mt-0">
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 8 19"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Facebook page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white ms-5"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 21 16"
+                >
+                  <path
+                    d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                  />
+                </svg>
+                <span class="sr-only">Discord community</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white ms-5"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 17"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Twitter page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white ms-5"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Instagram account</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
     <!-- Footer Section -->
   </body>
-  <script src="./app.js"></script>
+  <script type="module" src="app.js"></script>
   <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </html>
