@@ -56,6 +56,11 @@ const teamData = {
           img: "assets/pic-3.jpg",
           position: "Beauty President of Italy",
         },
+        {
+          name: "Giorgia Meloni",
+          img: "assets/pic-3.jpg",
+          position: "Beauty President of Italy",
+        },
       ],
     },
   },
