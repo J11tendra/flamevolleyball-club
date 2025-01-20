@@ -61,6 +61,11 @@ const teamData = {
           img: "assets/pic-3.jpg",
           position: "Beauty President of Italy",
         },
+        {
+          name: "THird pakret",
+          img: "assets/pic-3.jpg",
+          position: "Beauty President of Italy",
+        },
       ],
     },
   },
